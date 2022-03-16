@@ -1,0 +1,33 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'WPInjection_Example' do
+  pod 'WPInjection', :path => '../'
+  pod 'Live', :path => 'Live/'
+  pod 'List', :path => 'List/'
+  pod 'Protocol', :path => 'Protocol/'
+  
+  target 'WPInjection_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+  
+#  # USE_HEADERMAP 禁用同一个target 下，类之间的互相import
+#  disableHMap = ['Live', 'List']
+#  post_install do |installer_representation|
+#    installer_representation.pods_project.targets.each do |target|
+#        if disableHMap.include? target.name
+#          target.build_configurations.each do |config|
+#            config.build_settings['USE_HEADERMAP'] = 'NO'
+#          end
+#        end
+#    end
+#  end
+end
