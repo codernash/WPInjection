@@ -1,0 +1,64 @@
+PODS:
+  - Expecta (1.0.6)
+  - "Expecta+Snapshots (3.1.1)":
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - List (0.1.0):
+    - Protocol
+  - Live (0.1.0):
+    - Protocol
+  - Protocol (0.1.0):
+    - WPInjection
+  - Specta (1.0.7)
+  - WPDelegates (0.5.0)
+  - WPInjection (0.8.0):
+    - WPDelegates
+
+DEPENDENCIES:
+  - Expecta
+  - "Expecta+Snapshots"
+  - FBSnapshotTestCase
+  - List (from `List/`)
+  - Live (from `Live/`)
+  - Protocol (from `Protocol/`)
+  - Specta
+  - WPInjection (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Expecta
+    - "Expecta+Snapshots"
+    - FBSnapshotTestCase
+    - Specta
+    - WPDelegates
+
+EXTERNAL SOURCES:
+  List:
+    :path: List/
+  Live:
+    :path: Live/
+  Protocol:
+    :path: Protocol/
+  WPInjection:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  List: 92f7bbc91acbd4e4ac5d717b513b8576483b69a8
+  Live: 6ddbc982e2a64546897a34bee79692f1d163dc3c
+  Protocol: 1b64f604ef8042f62ecf5a8cff0e5176c134b174
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  WPDelegates: 9c851f3f69cfe3b7564dee9a9170ce5e2a666890
+  WPInjection: 07d5c2b331955d25b9b98813bae64a0081a5ed51
+
+PODFILE CHECKSUM: 20ace26fd25125479767306547ecb86103971f10
+
+COCOAPODS: 1.11.2
